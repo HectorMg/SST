@@ -12,12 +12,15 @@
     <title>Generar Reporte</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../bootstrap/css/sst.css" rel="stylesheet">
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/bootstrap/css/sst.css" rel="stylesheet">
 
 
     <!-- Custom styles for this template -->
-    <link href="../bootstrap/css/dashboard.css" rel="stylesheet">
+    <link href="../lib/bootstrap/css/dashboard.css" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="../lib/bootstrap-select/css/bootstrap-select.min.css">
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -64,7 +67,7 @@
               </div>
               <div class="row">
                 <!-- Tutores DD -->
-                <div class="btn-group">
+                <!-- <div class="btn-group">
                   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Seleccionar Tutor a Evaluar <span class="caret"></span>
                   </button>
@@ -74,7 +77,14 @@
                     <li><a href="#">Memin Pingüín</a></li>
                     <li><a href="#">Juan Camaney</a></li>
                   </ul>
-                </div>
+                </div> -->
+                <select class="selectpicker">
+                  <option value="" selected disabled>Seleccionar Tutor a Evaluar</option>
+                  <option>Perenganito Suarez</option>
+                  <option>Fulano de Tal</option>
+                  <option>Memín Pingüín</option>
+                  <option>Juan Camaney</option>
+                </select>
               </div>
             </div>
           </div>
@@ -260,9 +270,10 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="../bootstrap/js/vendor/holder.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../lib/bootstrap/js/vendor/holder.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../lib/bootstrap-select/js/bootstrap-select.min.js"></script>
   </body>
 </html>
