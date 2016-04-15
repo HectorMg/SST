@@ -34,7 +34,7 @@
         <div class="cover-container">
           <div class="inner cover">
             <img class="logo-cover" src="images/logo_bw.png" alt="Logo de Prepanet" />
-            <form class="form-signin" action="login">
+            <form class="form-signin" onsubmit="login()" action="javascript:void(0)">
               <h2 class="form-signin-heading">Iniciar Sesión</h2>
               <label for="inputUser" class="sr-only">Clave de Usuario</label>
               <input type="text" id="inputUser" class="form-control" placeholder="Clave de Usuario" required autofocus>
@@ -66,11 +66,20 @@
         var inputUser = document.getElementById("inputUser");
         var username = inputUser.value;
         var numbers = username.substring(1);
-
-        if(username[0] == 'L' && username.length == 8 && !iNaN(numbers)){
-          window.location = "user/perfil.html";
-          console.log("Hola");
+        if(username[0] != 'L'){
+          alert("Su clave de usuario debe comenzar con L.");
+          return;
         }
+        if(username.length != 9){
+          alert("Su clave de usuario debe contener 9 caracteres.");
+          return;
+        }
+        if(isNaN(numbers)){
+          alert("Su clave de usuario debe ser un número de nómina válido.");
+          return;
+        }
+        window.location = "user/perfil.html";
+        return;
       }
     </script>
 
