@@ -10,17 +10,25 @@
     <link rel="icon" href="../../favicon.ico">
 
     <title>Roles Asignados</title>
+    
+    
 
     <!-- Bootstrap core CSS -->
     <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../lib/bootstrap/css/sst.css" rel="stylesheet">
-
 
     <!-- Custom styles for this template -->
+    <link href="../lib/bootstrap/css/sst.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
     <link href="../lib/bootstrap/css/dashboard.css" rel="stylesheet">
+
+    <script src="../js/perfil.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="../lib/bootstrap-select/css/bootstrap-select.min.css">
+
   </head>
 
-  <script src="../js/perfil.js"></script>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
@@ -66,7 +74,7 @@
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header">Roles Asignados</h1>
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-8">
               <div class="row">
                 <div class="col-sm-4">
                   <h2>Campus</h2>
@@ -79,40 +87,28 @@
               <div class="row">
                 <div class="col-sm-4">
                   <!-- Campus DD -->
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Seleccionar Campus <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Todos los Campus</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">Campus Monterrey</a></li>
-                      <li><a href="#">Campus Guadalajara</a></li>
-                      <li><a href="#">Campus Ciudad de México</a></li>
-                    </ul>
-                  </div>
+                  <select name="" id="input" class="selectpicker" required="required">
+                    <option value="-" selected disabled>Seleccionar Campus</option>
+                    <option value="">Campus Monterrey</option>
+                    <option value="">Campus Guadalajara</option>
+                    <option value="">Campus Ciudad de México</option>
+                  </select>
                 </div>
                 <div class="col-sm-4">
                   <!-- Curso DD -->
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Seleccionar Curso <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Todos los Cursos</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">Economía y Estado (Plan 2012)</a></li>
-                      <li><a href="#">Administración de proyectos (Plan 2012)</a></li>
-                      <li><a href="#">Inglés II (Plan 2012)</a></li>
-                    </ul>
-                  </div>
+                  <select name="" id="input" class="selectpicker" required="required">
+                    <option value="-" selected disabled>Seleccionar Curso</option>
+                    <option value="">Economía y Estado (Plan 2012)</option>
+                    <option value="">Administración de proyectos (Plan 2012)</option>
+                    <option value="">Inglés II (Plan 2012)</option>
+                  </select>
                 </div>
                 <div class="col-sm-4">
                   <button type="button" onclick="refresh()" class="btn btn-default btn-md" style="width: 100%">Mostrar</button>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-4">
               <div class="panel panel-default">
                 <div class="panel-body">
                   <div class="table-responsive">
@@ -195,6 +191,13 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+
+    <!-- Latest compiled and minified JavaScript -->
     <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    
+        <!-- Latest compiled and minified JavaScript -->
+    <script src="../lib/bootstrap-select/js/bootstrap-select.min.js"></script>
+
+    
   </body>
 </html>
