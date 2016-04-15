@@ -19,6 +19,8 @@
     <!-- Custom styles for this template -->
     <link href="../bootstrap/css/dashboard.css" rel="stylesheet">
   </head>
+
+  <script src="../js/perfil.js"></script>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
@@ -106,7 +108,7 @@
                   </div>
                 </div>
                 <div class="col-sm-4">
-                  <button type="button" class="btn btn-default btn-md" style="width: 100%">Mostrar</button>
+                  <button type="button" onclick="refresh()" class="btn btn-default btn-md" style="width: 100%">Mostrar</button>
                 </div>
               </div>
             </div>
@@ -134,7 +136,7 @@
               </div>
             </div>
           </div>
-          <div id="table-cursos" class="">
+          <div id="table-cursos" class="hide">
             <div class="panel panel-primary">
               <div class="panel-heading">
                 <center>Cursos Asignados</center>
