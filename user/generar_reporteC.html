@@ -21,6 +21,8 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="../lib/bootstrap-select/css/bootstrap-select.min.css">
+  
+    
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -106,8 +108,62 @@
                   <center>Evaluación del Tutor</center>
                 </div>
                 <div class="panel-body">
+                  <table class="table table-striped" style="text-align: center;">
+                    <thead>
+                      <tr>
+                        <th style="text-align: center;">Semana</th>
+                        <th style="text-align: center;">1</th>
+                        <th style="text-align: center;">2</th>
+                        <th style="text-align: center;">3</th>
+                        <th style="text-align: center;">4</th>
+                        <th style="text-align: center;">5</th>
+                        <th style="text-align: center;">6</th>
+                        <th style="text-align: center;">7</th>
+                        <th style="text-align: center;">8</th>
+                        <th style="text-align: center;">9</th>
+                        <th style="text-align: center;">10</th>
+                        <th style="text-align: center;">11</th>
+                        <th style="text-align: center;">12</th>
+                        <th style="text-align: center;">13</th>
+                        <th style="text-align: center;">14</th>
+                        <th style="text-align: center;">15</th>
+                        <th style="text-align: center;">Promedio</th>
 
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Calificación</td>
+                        <td class="calif">90</td>
+                        <td class="calif">88</td>
+                        <td class="calif">90</td>
+                        <td class="calif">90</td>
+                        <td class="calif">91</td>
+                        <td class="calif">96</td>
+                        <td class="calif">91</td>
+                        <td class="calif">95</td>
+                        <td class="calif">92</td>
+                        <td class="calif">95</td>
+                        <td class="calif">92</td>
+                        <td class="calif">93</td>
+                        <td class="calif">96</td>
+                        <td class="calif">94</td>
+                        <td class="calif">92</td>
 
+                        <td id="promedio"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <script>
+                    var x = document.getElementsByClassName('calif');
+                    var sum = 0;
+                    var i = 0;
+                    for(i = 0; i < x.length; i++){
+                      sum+=parseInt(x[i].innerHTML);
+                    }
+                    var x = document.getElementById("promedio");
+                    x.innerHTML = (sum/i).toFixed(2);
+                  </script>
                   <h4>¿El tutor invitó a sus alumnos a sus asesorías presenciales?</h4>
                   <div class="radio">
                     <label>
@@ -152,7 +208,7 @@
 
                   <h4>Resumen de observaciones sobre el desempeño del tutor y el seguimiento a sus alumnos</h4>
                   <textarea class="form-control" required="required" rows="10">
-
+                  
                   </textarea>
                   <i>*Justificación de la cantidad de horas que el coordinador considera que el tutor debe acreditar. Cualquier comentario que ayude a entender lo que el tutor aportó a su grupo y si realizó esfuerzos adicionales que merezcan ser considerados.
 
@@ -197,10 +253,10 @@
                     </label>
                   </div>
 
-                  <div class="row">
+                  <div class="row"> 
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                     <a href="reporte_exito.html"><button type="submit" class="btn btn-primary btn-lg" style= "width: 100%; margin-top: 30px;">Enviar Reporte</button></a>
-
+                     <button type="button" class="btn btn-primary btn-lg" style= "width: 100%; margin-top: 30px;">Enviar</button>
+                      
                     </div>
                   </div>
                 </div>
