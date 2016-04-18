@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Reporte Semanal del Tutor</title>
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../lib/bootstrap/css/sst.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../lib/bootstrap/css/dashboard.css" rel="stylesheet">
+
+    <script src="../js/perfil.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="../lib/bootstrap-select/css/bootstrap-select.min.css">
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <img class="logo-brand" src="../images/logo_bw.png" alt="Logo de Prepanet"/>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="perfil.html">Juan Pérez</a></li>
+            <li><a href="../login.html">Cerrar Sesión</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Roles Asignados <span class="sr-only">(current)</span></a></li>
+            <li><h4 style="margin-left: 10px;">Explorar Reportes</h4></li>
+            <li><a href="reporteQ.html">Quincenales</a></li>
+            <li><a href="reporteS.html">Evaluación de Desempeño Semanal</a></li>
+            <li><a href="reporteC.html">Concentrados de Reportes Quincenales </a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><h4 style="margin-left: 10px;">Generar Reportes</h4></li>
+            <li><a href="generar_reporteQ.html">Reporte Quincenal</a></li>
+            <li><a href="generar_reporteS.html">Evaluación de Desempeño Semanal</a></li>
+            <li><a href="generar_reporteC.html">Concentrado de Reportes Quincenales</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Reporte Semanal del Desempeño del Tutor</h1>
+          <div id="table-cursos">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <center>Reporte Semanal del Desempeño del Tutor</center>
+              </div>
+              <div class="panel-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h4>Tutor:</h4>
+                      <h4 style="font-weight: normal">Juan Camaney</h4>
+                      <h4>Coordinador de Tutores:</h4>
+                      <h4 style="font-weight: normal">Juan Pérez</h4>
+                      <h4>Semana:</h4>
+                      <h4 style="font-weight: normal">Semana 5</h4>
+                      <h4>Fecha del reporte:</h4>
+                      <h4 style="font-weight: normal">02/04/2016 12:06:33</h4>
+                    </div>
+                    <div class="col-sm-8">
+                      <div class="table-responsive">
+                        <table class ="table table-striped">
+                          <thead>
+                            <th>Criterio</th>
+                            <th>Calificación</th>
+                          </thead>
+                          <tr>
+                            <td> Calificar en un plazo no mayor a 48 horas actividades y/o exámenes</td>
+                            <td> 3/3</td>
+                          </tr>
+                          <tr>
+                            <td> Calificar con base en rúbrica y la envía o especifica el desglose de puntos:</td>
+                            <td>1/1</td>
+                          </tr>
+                          <tr>
+                            <td> Da retroalimentación clara y específica de actividades y/o exámenes:</td>
+                            <td>2/2</td>
+                          </tr>
+                          <tr>
+                            <td> Responde mensajes en un lapso no mayor a 24 horas:</td>
+                            <td>3/3</td>
+                          </tr>
+                          <tr>
+                            <td>Errores de ortografía en mensajes, reportes y retroalimentaciones:</td>
+                            <td>1/1</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Total:</strong></td>
+                            <strong><td>10/10</td></strong>
+                          </tr>
+
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <h4>Comentarios:</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu lectus ligula. Praesent quis tempus nisl.
+                      Sed sagittis aliquam suscipit. Morbi nisl diam, pharetra sed tellus vel, facilisis aliquam nisl. Donec dictum
+                      quam at risus vulputate, ac facilisis ante gravida. Fusce ultricies egestas vulputate. Nullam volutpat luctus
+                      dolor, sit amet fermentum massa imperdiet eu.
+                    </p>
+                  </div>
+                  <center><a href="javascript:window.print()" class="btn btn-lg btn-primary">Imprimir Reporte</a></center>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Latest compiled and minified JavaScript -->
+    <script src="../lib/bootstrap-select/js/bootstrap-select.min.js"></script>
+
+
+  </body>
+</html>
