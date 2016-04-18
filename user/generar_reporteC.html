@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Generar Reporte</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/bootstrap/css/sst.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="../lib/bootstrap/css/dashboard.css" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="../lib/bootstrap-select/css/bootstrap-select.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <img class="logo-brand" src="../images/logo_bw.png" alt="Logo de Prepanet"/>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="perfil.html">Juan Pérez</a></li>
+            <li><a href="../login.html">Cerrar Sesión</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Roles Asignados <span class="sr-only">(current)</span></a></li>
+            <li><h4 style="margin-left: 10px;">Explorar Reportes</h4></li>
+            <li><a href="reporte.html">Quincenales</a></li>
+            <li><a href="reporte.html">Evaluación de Desempeño Semanal</a></li>
+            <li><a href="reporte.html">Concentrados de Reportes Quincenales </a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><h4 style="margin-left: 10px;">Generar Reportes</h4></li>
+            <li><a href="generar_reporte.html">Evaluación de Desempeño Semanal</a></li>
+            <li><a href="generar_reporte.html">Concentrado de Reportes Quincenales</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Concentrado de Reportes Quincenales</h1>
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <h2>Materia</h2>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <h2>Tutor</h2>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <h2>Coordinador</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <select class="selectpicker">
+                <option selected disabled>Seleccionar Matera</option>
+                <option>Economía y Estado (Plan 2012)</option>
+                <option>Administración de proyectos (Plan 2012)</option>
+                <option>Inglés II (Plan 2012)</option>
+              </select>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <select class="selectpicker">
+                <option value="" selected disabled>Seleccionar Tutor a Evaluar</option>
+                <option>Perenganito Suarez</option>
+                <option>Fulano de Tal</option>
+                <option>Memín Pingüín</option>
+                <option>Juan Camaney</option>
+              </select>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <select class="selectpicker">
+                <option value="" selected disabled>Seleccionar Tutor a Evaluar</option>
+                <option>Perenganito Suarez</option>
+                <option>Fulano de Tal</option>
+                <option>Memín Pingüín</option>
+                <option>Juan Camaney</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div id="table-cursos" class="" style="margin-top: 20px;">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <center>Evaluación del Tutor</center>
+                </div>
+                <div class="panel-body">
+
+                  
+                  <h4>¿El tutor invitó a sus alumnos a sus asesorías presenciales?</h4>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="invito">
+                      Sí
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="invito">
+                      No
+                    </label>
+                  </div>
+
+                  <h4>¿El tutor realizó los reportes parciales de desempeño de alumnos, reflejando seguimiento a los mismos?</h4>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="realizoReportes">
+                      Sí
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="realizoReportes">
+                      No
+                    </label>
+                  </div>
+
+                  <h4>¿El tutor realizó el reporte final de alumno?</h4>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="realizoFinal">
+                      Sí
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="realizoFinal">
+                      No
+                    </label>
+                  </div>
+
+                  <h4>Resumen de observaciones sobre el desempeño del tutor y el seguimiento a sus alumnos</h4>
+                  <textarea class="form-control" required="required" rows="10">
+                  
+                  </textarea>
+                  <i>*Justificación de la cantidad de horas que el coordinador considera que el tutor debe acreditar. Cualquier comentario que ayude a entender lo que el tutor aportó a su grupo y si realizó esfuerzos adicionales que merezcan ser considerados.
+
+                  <h4>Envió actividad de cierre</h4>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="actividad">
+                      Sí
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="actividad">
+                      No
+                    </label>
+                  </div>
+
+                  <h4>¿Lo recomiendo para reingresar?</h4>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="reingresar">
+                      Sí
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="reingresar">
+                      No
+                    </label>
+                  </div>
+                  <h4>¿Lo recomendaría como coordinador de tutores?</h4>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="coordinador">
+                      Sí
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="coordinador">
+                      No
+                    </label>
+                  </div>
+
+                  <div class="row"> 
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                     <button type="button" class="btn btn-primary btn-lg" style= "width: 100%; margin-top: 30px;">Enviar</button>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../lib/bootstrap/js/vendor/holder.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../lib/bootstrap-select/js/bootstrap-select.min.js"></script>
+  </body>
+</html>
