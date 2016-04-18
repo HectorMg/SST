@@ -24,6 +24,14 @@
   
     
   </head>
+
+  <script>
+    function refresh(){
+      var table = document.getElementById("table-cursos")
+      //Regex to remove class hide
+      table.className = table.className.replace( /(?:^|\s)hide(?!\S)/g , '')
+    }
+  </script>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
@@ -70,14 +78,11 @@
             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
               <h2>Tutor</h2>
             </div>
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-              <h2>Coordinador</h2>
-            </div>
           </div>
           <div class="row">
             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
               <select class="selectpicker">
-                <option selected disabled>Seleccionar Matera</option>
+                <option selected disabled>Seleccionar Curso</option>
                 <option>Economía y Estado (Plan 2012)</option>
                 <option>Administración de proyectos (Plan 2012)</option>
                 <option>Inglés II (Plan 2012)</option>
@@ -85,25 +90,19 @@
             </div>
             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
               <select class="selectpicker">
-                <option value="" selected disabled>Seleccionar Tutor a Evaluar</option>
+                <option value="" selected disabled>Seleccionar Tutor</option>
                 <option>Perenganito Suarez</option>
                 <option>Fulano de Tal</option>
                 <option>Memín Pingüín</option>
                 <option>Juan Camaney</option>
               </select>
             </div>
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-              <select class="selectpicker">
-                <option value="" selected disabled>Seleccionar Tutor a Evaluar</option>
-                <option>Perenganito Suarez</option>
-                <option>Fulano de Tal</option>
-                <option>Memín Pingüín</option>
-                <option>Juan Camaney</option>
-              </select>
+            <div class="col-sm-4">
+              <button type="button" onclick="refresh()" class="btn btn-default btn-md" style="width: 100%">Mostrar</button>
             </div>
           </div>
           <div class="row">
-            <div id="table-cursos" class="" style="margin-top: 20px;">
+            <div id="table-cursos" class="hide" style="margin-top: 20px;">
               <div class="panel panel-primary">
                 <div class="panel-heading">
                   <center>Evaluación del Tutor</center>
