@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Generar Reporte</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/bootstrap/css/sst.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="../lib/bootstrap/css/dashboard.css" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="../lib/bootstrap-select/css/bootstrap-select.min.css">
+  
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <img class="logo-brand" src="../images/logo_bw.png" alt="Logo de Prepanet"/>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="perfil.html">Juan Pérez</a></li>
+            <li><a href="../login.html">Cerrar Sesión</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Roles Asignados <span class="sr-only">(current)</span></a></li>
+            <li><h4 style="margin-left: 10px;">Explorar Reportes</h4></li>
+            <li><a href="reporteQ.html">Quincenales</a></li>
+            <li><a href="reporteS.html">Evaluación de Desempeño Semanal</a></li>
+            <li><a href="reporteC.html">Concentrados de Reportes Quincenales </a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><h4 style="margin-left: 10px;">Generar Reportes</h4></li>
+            <li><a href="generar_reporteQ.html">Reporte Quincenal</a></li>
+            <li><a href="generar_reporteS.html">Evaluación de Desempeño Semanal</a></li>
+            <li><a href="generar_reporteC.html">Concentrado de Reportes Quincenales</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Concentrado de Reportes Quincenales</h1>
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <h2>Materia</h2>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <h2>Tutor</h2>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <h2>Coordinador</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <select class="selectpicker">
+                <option selected disabled>Seleccionar Matera</option>
+                <option>Economía y Estado (Plan 2012)</option>
+                <option>Administración de proyectos (Plan 2012)</option>
+                <option>Inglés II (Plan 2012)</option>
+              </select>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <select class="selectpicker">
+                <option value="" selected disabled>Seleccionar Tutor a Evaluar</option>
+                <option>Perenganito Suarez</option>
+                <option>Fulano de Tal</option>
+                <option>Memín Pingüín</option>
+                <option>Juan Camaney</option>
+              </select>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <select class="selectpicker">
+                <option value="" selected disabled>Seleccionar Tutor a Evaluar</option>
+                <option>Perenganito Suarez</option>
+                <option>Fulano de Tal</option>
+                <option>Memín Pingüín</option>
+                <option>Juan Camaney</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div id="table-cursos" class="" style="margin-top: 20px;">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <center>Evaluación del Tutor</center>
+                </div>
+                <div class="panel-body">
+                  <table class="table table-striped" style="text-align: center;">
+                    <thead>
+                      <tr>
+                        <th style="text-align: center;">Semana</th>
+                        <th style="text-align: center;">1</th>
+                        <th style="text-align: center;">2</th>
+                        <th style="text-align: center;">3</th>
+                        <th style="text-align: center;">4</th>
+                        <th style="text-align: center;">5</th>
+                        <th style="text-align: center;">6</th>
+                        <th style="text-align: center;">7</th>
+                        <th style="text-align: center;">8</th>
+                        <th style="text-align: center;">9</th>
+                        <th style="text-align: center;">10</th>
+                        <th style="text-align: center;">11</th>
+                        <th style="text-align: center;">12</th>
+                        <th style="text-align: center;">13</th>
+                        <th style="text-align: center;">14</th>
+                        <th style="text-align: center;">15</th>
+                        <th style="text-align: center;">Promedio</th>
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Calificación</td>
+                        <td class="calif">90</td>
+                        <td class="calif">88</td>
+                        <td class="calif">90</td>
+                        <td class="calif">90</td>
+                        <td class="calif">91</td>
+                        <td class="calif">96</td>
+                        <td class="calif">91</td>
+                        <td class="calif">95</td>
+                        <td class="calif">92</td>
+                        <td class="calif">95</td>
+                        <td class="calif">92</td>
+                        <td class="calif">93</td>
+                        <td class="calif">96</td>
+                        <td class="calif">94</td>
+                        <td class="calif">92</td>
+
+                        <td id="promedio"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <script>
+                    var x = document.getElementsByClassName('calif');
+                    var sum = 0;
+                    var i = 0;
+                    for(i = 0; i < x.length; i++){
+                      sum+=parseInt(x[i].innerHTML);
+                    }
+                    var x = document.getElementById("promedio");
+                    x.innerHTML = (sum/i).toFixed(2);
+                  </script>
+
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      <p><b>Horas Acreditadas</b></p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      16
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      <p><b>Porcentaje de alumnos que completaron curso</b></p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      25%
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      <p><b>Porcentaje de alumnos del grupo orignal que aprovaron</b></p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      25%
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      <p><b>Porcentaje de alumnos del grupo final que concluyeron el curso</b></p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      25%
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      <p><b>Porcentaje de alumnos del grupo final que acabaron</b></p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      25%
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      <p><b>¿Invitó a sus alumnos a sus asesorías presenciales?</b></p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      Sí
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      <p><b>¿Realizó los reportes parciales de desempeño de alumnos?</b></p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      Sí
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      <p><b>¿Realizó el reporte final de alumno?</b></p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      Sí
+                    </div>
+                  </div>
+                  
+
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      <p><b>Cantidad de horas acreditadas</b></p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      20
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      <p><b>Cantidad de horas que el coordinador de tutores considera el tutor debe acreditar</b></p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      20
+                    </div>
+                  </div>
+                 
+                  <p><b>Resumen de observaciones sobre el desempeño del tutor y el seguimiento a sus alumnos</b></p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  <br/>
+                  <br/>
+
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      <p><b>¿Envió actividad de cierre?</b></p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      Sí
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      <p><b>¿Lo recomiendo para reingresar?</b></p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      Sí
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      <p><b>¿Lo recomendaría como coordinador de tutores?</b></p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      Sí
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../lib/bootstrap/js/vendor/holder.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../lib/bootstrap-select/js/bootstrap-select.min.js"></script>
+  </body>
+</html>
